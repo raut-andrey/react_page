@@ -10,7 +10,7 @@ class Routes extends PureComponent {
           routes.map(route => (
             <Route
               key={route.path}
-              exaxt={route.exaxt}
+              exact={route.exact}
               path={route.path}
               component={route.component}
             />
@@ -23,12 +23,12 @@ class Routes extends PureComponent {
 
 const routes = [
   {
-    exaxt: true,
+    exact: true,
     path: '/',
     component: Home
   },
   {
-    exaxt: false,
+    exact: false,
     path: '/',
     component: () => <Redirect to="/" />
   }
