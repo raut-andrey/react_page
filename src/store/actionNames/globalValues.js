@@ -1,0 +1,1 @@
+export const TOGGLE_SPINER = 'TOGGLE_SPINER';

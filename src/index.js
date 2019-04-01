@@ -1,10 +1,25 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Router } from 'react-router';
+import { Provider } from 'react-redux';
+import { createBrowserHistory } from 'history';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import GlobalStyles from './styles/GlobalStyles';
+import store from './store';
+import 'react-toastify/dist/ReactToastify.css';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+export const history = createBrowserHistory();
+
+ReactDOM.render(
+  <Provider store={store}>
+    <GlobalStyles />
+
+    <Router history={history}>
+      <App />
+    </Router>
+  </Provider>,
+  document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
