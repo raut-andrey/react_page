@@ -14,6 +14,13 @@ export default createGlobalStyle`
     min-height: 100%;
   }
 
+  #root {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 70px 1fr 30px;
+    grid-template-areas: 'header' 'main' 'footer';
+  }
+
   a {
     text-decoration: none;
     color: unset;

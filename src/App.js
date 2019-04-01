@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import styled from 'styled-components';
 import { BrowserRouter } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
 import Routes from './routes';
@@ -17,7 +18,9 @@ class App extends PureComponent {
 
           <Header />
 
-          <Routes />
+          <StyledContainer>
+            <Routes />
+          </StyledContainer>
 
           <Footer />
         </React.Fragment>
@@ -25,5 +28,9 @@ class App extends PureComponent {
     );
   }
 }
+
+const StyledContainer = styled.main`
+  grid-area: main;
+`;
 
 export default App;

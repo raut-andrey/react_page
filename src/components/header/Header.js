@@ -10,6 +10,7 @@ class Header extends PureComponent {
 }
 
 const StyledContainer = styled.header`
+  grid-area: header;
 `;
 
 export default Header;
