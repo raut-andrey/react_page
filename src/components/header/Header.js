@@ -21,6 +21,8 @@ class Header extends PureComponent {
 
 const StyledContainer = styled.header`
   grid-area: header;
+  background: linear-gradient(120deg,#ffffff -20%, #ffbb40 44%,#bf8111 116%);
+  box-shadow: 0 0 8px 0 #90610c;
 
   .page-header__wrapper {
     height: 100%;
@@ -42,7 +44,12 @@ const StyledContainer = styled.header`
 
   .page-header__logo-image {
     height: 45px;
+    transition: 0.3s;
     vertical-align: middle;
+
+    :hover {
+      transform: scale(1.1);
+    }
   }
 `;
 

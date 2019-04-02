@@ -9,6 +9,14 @@ export default createGlobalStyle`
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   }
 
+  html {
+    background: #eee;
+  }
+
+  body {
+    background: radial-gradient(circle at 40px 40px,#fdf5ed 0%,#ffbb40 67%,#bf8111 95%);
+  }
+
   html, body, #root {
     height: 1px;
     min-height: 100%;
@@ -28,6 +36,15 @@ export default createGlobalStyle`
 
   .page-title {
     text-align: center;
+
+    font-size: 30px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #0B2349 -30%, #0D61BC 50%, #8AA9D6 110%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #0B2349;
+    display: table;
+    margin: 0 auto 20px;
   }
 
   .responsive-container {

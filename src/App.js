@@ -8,6 +8,7 @@ import Header from './components/header/Header';
 import Footer from './components/Footer';
 
 class App extends PureComponent {
+
   render() {
     return (
       <BrowserRouter>
@@ -18,7 +19,7 @@ class App extends PureComponent {
 
           <Header />
 
-          <StyledContainer>
+          <StyledContainer className="responsive-container">
             <Routes />
           </StyledContainer>
 
@@ -31,6 +32,10 @@ class App extends PureComponent {
 
 const StyledContainer = styled.main`
   grid-area: main;
+
+  && {
+    padding-top: 20px;
+  }
 `;
 
 export default App;

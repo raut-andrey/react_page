@@ -1,6 +1,8 @@
 import React, { PureComponent } from 'react';
 // import PropTypes from 'prop-types';
 import styled from 'styled-components';
+import Logo from '../../components/Logo';
+// import Flubber from '../../components/Flubber';
 
 class Home extends PureComponent {
   constructor(props) {
@@ -11,13 +13,20 @@ class Home extends PureComponent {
   render() {
     return (
       <StyledContainer>
-        <h1 className="page-title">Home</h1>
+        <Logo />
+
+        {/* <Flubber /> */}
       </StyledContainer>
     );
   }
 }
 
 const StyledContainer = styled.div`
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 20px;
 `;
 
 Home.propTypes = {
